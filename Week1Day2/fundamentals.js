@@ -48,26 +48,43 @@ const x = 5
 // console.log(person)
 
 //?=====Destructuring
-const person = { 
-    firstName: 'Bob', 
-    lastName: 'Marley', 
-    email: 'bob@marley.com', 
-    password: 'sekureP@ssw0rd9', 
-    username: 'barley', 
-    createdAt: 1543945177623
-};
+// const person = {
+//     firstName: 'Bob',
+//     lastName: 'Marley',
+//     email: 'bob@marley.com',
+//     password: 'sekureP@ssw0rd9',
+//     username: 'barley',
+//     createdAt: 1543945177623
+// };
 // const firstName = person.firstName
 // const email = person.email
 // console.log(firstName, email)
 
-const { firstName, password } = person
-console.log(firstName, password)
+// const { firstName, password } = person
+// console.log(firstName, password)
 
 
-const animals = ['horse', 'dog', 'fish', 'cat', 'bird'];
+// const animals = ['horse', 'dog', 'fish', 'cat', 'bird'];
 
-const animalIndexOne = animals[1]
-const animalIndexlast = animals[4]
+// const animalIndexOne = animals[1]
+// const animalIndexlast = animals[4]
 
-const [,,LastAnimal,,] = animals
-console.log(LastAnimal)
+// const [,,LastAnimal,,] = animals
+// console.log(LastAnimal)
+
+
+//?===== Rest/Spread
+
+// pass by reference and pass by value 
+//--------0x0014FE
+const a = [10, 20, 30]
+const b = [...a]
+
+console.log(a === b)
+b.push(10000)
+
+
+
+console.log(a)//?
+console.log(b)//?
+
