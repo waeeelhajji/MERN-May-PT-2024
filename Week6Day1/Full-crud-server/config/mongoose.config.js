@@ -5,5 +5,5 @@ const pw = process.env.ATLAS_PASSWORD;
 console.log(dbName,username,pw)
 const uri = `mongodb+srv://${username}:${pw}@merncluster0.hgbw0.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 mongoose.connect(uri)
-    .then(() => console.log("Established a connection to the database"))
-    .catch(err => console.log("Something went wrong when connecting to the database", err));
+    .then(() => console.log(`📡📡📡 Established a connection to the ${dbName} database`))
+    .catch(err => console.log("❌❌❌❌ Something went wrong when connecting to the database", err));
